@@ -1,51 +1,124 @@
+/* 
+use #class if we want multiple elements to have the same styles applied
+use .id if we want only one element to have styles applied
+*/
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200&display=swap');
+</style>
+
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: teal;
+	color: rgb(101, 180, 101);
+   }
+   .nav-links a {
+	color: rgb(223, 41, 41);
+   }
+
+   /* NAVBAR MENU */
+   .menu {
+	display: flex;
+	gap: 1em;
+	font-size: 18px;
+   }
+   .menu li:hover {
+	background-color: #4c9e9e;
+	border-radius: 5px;
+	transition: 0.3s ease;
+   }
+   .menu li {
+	padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services {
+	position: relative; 
+   }
+   .dropdown {
+	background-color: rgb(1, 139, 139);
+	padding: 1em 0;
+	position: absolute; /*WITH RESPECT TO PARENT*/
+	display: none;
+	border-radius: 8px;
+	top: 35px;
+   }
+   .dropdown li + li {
+	margin-top: 10px;
+   }
+   .dropdown li {
+	padding: 0.5em 1em;
+	width: 8em;
+	text-align: center;
+   }
+   .dropdown li:hover {
+	background-color: #4c9e9e;
+   }
+   .services:hover .dropdown {
+	display: block;
+   }
+
+
 body{
-	font-family: poppins;
+	font-family: 'Montserrat', sans-serif;
 	background-image: url(aa.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 }
 
-.banner-text{
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	color: #ffffff;
-}
+/* this is the styling for the non changing text */ 
+
 .banner-text h2{
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	margin: 0; 
-	color: lightskyblue;
-	text-transform: uppercase;
+	color: rgb(64, 133, 87);
+	text-transform: none;
 
 }
+
+/* this is the styling for the changing text */
+
 .box{
-	font-size: 35px;
+	font-size: 40px;
 	font-weight: bold;
 	opacity: 0;
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	font-family: century gothic;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .b1{
-	animation: ani1 7s infinite;
+	animation: ani1 6s infinite;
 }
 .b2{
-	animation: ani2 7s infinite;
+	animation: ani2 6s infinite;
 }
 .b3{
-	animation: ani3 7s infinite;
+	animation: ani3 6s infinite;
 }
 .b4{
-	animation: ani4 7s infinite;
+	animation: ani4 6s infinite;
 }
-.b5{
-	animation: ani5 7s infinite;
+
+@keyframes ani1{
+	0%{
+		opacity: 0;
+	}
+	15%{
+		opacity: 1;
+	}
+	25%{
+		opacity: 0;
+	}
 }
 
 @keyframes ani1{
@@ -60,23 +133,11 @@ body{
 	}
 }
 
-@keyframes ani1{
+@keyframes ani3{
 	20%{
 		opacity: 0;
 	}
-	30%{
-		opacity: 1;
-	}
 	40%{
-		opacity: 0;
-	}
-}
-
-@keyframes ani3{
-	40%{
-		opacity: 0;
-	}
-	50%{
 		opacity: 1;
 	}
 	60%{
@@ -88,22 +149,27 @@ body{
 	60%{
 		opacity: 0;
 	}
-	70%{
-		opacity: 1;
-	}
 	80%{
-		opacity: 0;
-	}
-}
-
-@keyframes ani4{
-	80%{
-		opacity: 0;
-	}
-	90%{
 		opacity: 1;
 	}
 	100%{
 		opacity: 0;
 	}
 }
+
+
+#footer{
+	font-family: 'Montserrat', sans-serif;;
+	font-size: 12px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:rgb(132, 204, 132);
+	color:white;
+	text-align: center;
+	height: 20px; 
+	padding: 10px;
+	opacity: 80;
+  }
+	
