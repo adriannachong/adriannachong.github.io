@@ -213,6 +213,11 @@
 
 }
   
+
+.nav__icon{
+	font-size: 20px;
+}
+
 .nav__item {
 	margin-bottom: var(--mb-4);
   }
@@ -262,6 +267,24 @@
 	top: 2rem;
 	background-color: var(--first-color);
   }
+
+  .nav__close{
+  	position: absolute;
+	right: 1.3rem;
+	bottom: .5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--first-color);
+  }
+
+
+.nav__close:hover{
+	color: var(--first-color-alt);
+}
+
+.show-menu{
+	bottom: ;
+}
 
 
 /* menu */
