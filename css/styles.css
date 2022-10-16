@@ -124,22 +124,34 @@
 
   /* reusing css classes */
   .section {
-	padding: 2rem 0 4rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
   }
-  
   .section__title {
-	font-size: var(--h1-font-size);
-	color: var(--title-color);
+	position: relative;
+	font-size: var(--h2-font-size);
+	color: var(--first-color);
+	margin-top: var(--mb-2);
+	margin-bottom: var(--mb-4);
+	text-align: center;
+  }
+
+  .section-title::after {
+	position: absolute;
+	content: '';
+	width: 64px;
+	height: 0.18rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 2rem;
+	background-color: var(--first-color);
   }
   
   .section__subtitle {
 	display: block;
 	font-size: var(--small-font-size);
 	margin-bottom: var(--mb-3);
-  }
-  
-  .section__title, 
-  .section__subtitle {
 	text-align: center;
   }
 
@@ -151,10 +163,12 @@
 	margin-right: var(--mb-1-5);
   }
   
-  .grid {
+  .bd-grid {
+	max-width: 1024px;
 	display: grid;
-	gap: 1.5rem;
-  }
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+}
   
   .header {
 	width: 100%;
