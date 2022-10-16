@@ -458,7 +458,7 @@
 /* buttons */
 .button {
 	background: rgb(247,150,192);
-background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+	background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
   line-height: 25px;
   padding: 10px;
   border-style: dotted;
@@ -705,7 +705,7 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
   /* footer */
   .footer {
 	background-color: var(--second-color);
-	color: #fff;
+	color: pink;
 	text-align: center;
 	font-weight: var(--font-semi);
 	padding: 2rem 0;
@@ -858,3 +858,87 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
 			}
 		  }
 		  
+		  /* contact from */
+		  .container_contact {
+			border-radius: 5px; 
+			background-color: none;
+			padding: 2px;  
+		  }
+		  
+		  .row:after {
+			content: "";
+			display: table;
+			clear : both;
+		  }
+		  
+		  .col-70{
+			margin-left: 5em;
+			margin-top: 10px;
+			padding: 10px;
+			width: 70%;
+		  }
+		  
+		  input[type=text], [type=email] { 
+			width: 100%;
+			padding: 10px;
+			border: hidden;
+			font-size: 15px;
+			font-family: var(--body-font);
+			border-bottom: 2px solid grey;
+			outline: none;
+			box-sizing: border-box;
+			resize: vertical;
+		  }
+		  
+		  input:focus {
+			font-style: italic;
+			border-bottom: 2px solid black;
+		  }
+		  
+		  textarea{
+		   width: 100%;
+			font-style: var(--body-font);
+			padding: 12px;
+			border: hidden;
+			font-size: 18px;
+			font-family: var(--body-font);
+			border-bottom: 2px solid grey;
+			outline: none;
+			height: 100px;
+			resize: none;
+		  }
+		  
+		  textarea:focus  {
+			font-style: italic;
+			border-bottom: 2px solid black;
+		  }
+		  
+		  input[type=submit] {
+			border: 2px solid grey;
+			padding: 12px 12px 10px 12px;
+			font-size: 15px;
+			font-family: var(--body-font);
+			background-color: white;
+			opacity: ;
+			font-weight: 700;
+			float: right;
+			color: grey;
+			text-transform: uppercase;
+			transition: all 0.35s ease-in-out;
+		  }
+		  
+		  input[type=submit]:hover {
+			color: black;
+			padding: 12px 56px 10px 56px;
+			outline: none;
+			border: 2px solid black;
+			letter-spacing: 0px;
+			
+		  }
+		  
+		  @media screen and (max-width: 600px) {
+			  .row, .col-70, input[type=submit] {
+				  width: 100%;
+				  margin-top: 0;
+			  }
+		  }
