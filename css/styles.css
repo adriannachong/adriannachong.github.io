@@ -1,31 +1,56 @@
 /* linking to poppins from google font */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200&family=Poppins:wght@400;500;600&display=swap');
 
-/* css variables */
 
+/* css variables */
 :root {
     --header-height: 3rem;
+
 
 /* colours */
 
 	/* main colour which the hsl will be based on */
-
 	--hue-color: 230;
 
-/* hsl (hue, saturation, lightness) colour mode */
-
-    --first-color: hsl(var(--hue--color), 73%, 72%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+	/* hsl (hue, saturation, lightness) colour mode */
+		--first-color: hsl(var(--hue--color), 73%, 72%);
+		--first-color-second: hsl(var(--hue-color), 69%, 61%);
+		--first-color-alt: hsl(var(--hue-color), 57%, 53%);
+		--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+		--title-color: hsl(var(--hue-color), 8%, 15%);
+		--text-color: hsl(var(--hue-color), 8%, 45%);
+		--text-color-light: hsl(var(--hue-color), 8%, 65%);
+		--input-color: hsl(var(--hue-color), 70%, 96%);
+		--body-color: hsl(var(--hue-color), 60%, 99%);
+		--container-color: #fff;
+		--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+		--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
 /* font and typography */
+--body-font: 'Poppins', sans-serif;
+
+
+/* font size variations */
+--big-font-size: 32px;
+--h1-font-size: 24px;
+--h2-font-size: 20px;
+--h3-font-size: 18px;
+--normal-font-size: 15px;
+--small-font-size: 12px;
+--smaller-font-size: 11px;
+
+
+/* font weight */
+--font-medium: 500;
+--font-semi-bold: 600;
+
+
+/* margin bottom = mb */
+--mb-0-25: 4px;
+--mb-0-5: 8px;
+--mb-0-75: 12px;
+--mb-1: 16px;
+--mb-1-5: 24px;
+--mb-2: 32px;
+--mb-2-5: 40px;
+--mb-3: 48px;
