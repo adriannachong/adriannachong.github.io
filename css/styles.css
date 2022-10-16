@@ -308,14 +308,6 @@
 	bottom: 0;
 	width: 260px;
   }
-  
-  .home__blob {
-	fill: var(--first-color);
-  }
-  
-  .home__blob-img {
-	width: 360px;
-  }
 
 
   /* about */
@@ -341,10 +333,9 @@
 /* buttons */
 .button {
 	display: inline-block;
-	background-color: var(--first-color);
+	background-color: lightskyblue;
 	color: #fff;
 	padding: .75rem 2.5rem;
-	font-weight: var(--font-semi);
 	border-radius: .5rem;
 	transition: .3s;
   }
@@ -364,6 +355,17 @@
 	margin-bottom: var(--mb-2);
   }
   
+  .skills_arrow{
+	margin-left: auto;
+	transition:.4s;
+  }
+
+  .skills_titles{
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: var(--mb-0-5);
+
+  }
   .skills__text {
 	margin-bottom: var(--mb-4);
   }
