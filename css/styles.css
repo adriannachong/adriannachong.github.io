@@ -169,9 +169,10 @@
 .topnav {
 	background-color: none;
 	overflow: hidden;
+	width: 100%;
 
   }
-  
+
   /* Style the links inside the navigation bar */
   .topnav a {
 	float: right;
@@ -204,27 +205,6 @@
 	justify-content: space-between;
 	align-items: center;
   }
-
-  @media screen and (min-width: 767px){
-	.nav__menu{
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		padding: 32px;
-		background-color: ;
-		box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-		border-radius: 1.5rem 1.5rem 0 0;
-		transition: .3s;
-	}
-}
-
-.nav_list{
-	grid-template-columns: repeat(3,1fr);
-	gap:32px;
-
-}
-  
 
 .nav__icon{
 	font-size: 15px;
@@ -260,7 +240,7 @@
 	flex-direction: column;
 	align-items: center;
 	font-size: var(--small-font-size);
-	color: var(--title-color);
+	color: pink;
 	font-weight: var(--font-medium);
   }
   
@@ -548,128 +528,6 @@
   }
   .button span:hover:after {
 	width: 100%;
-  }
-
-
-/* skills */
-  .skills__container {
-	row-gap: 0;
- }
-
-.skills__header{
-	display: flex;
-	align-items: center;
-	margin-bottom: var(--mb-2-5);
-	cursor: pointer;
-}
-  
-  .skills__subtitle {
-	margin-bottom: var(--small-font-size);
-	color: var(--text-color-light)
-  }
-  
-  .skills__arrow {
-	margin-left: auto;
-	transition: .4s;
-  }
-
-.skills_list{
-	row-gap: 1.5rem;
-	padding-left: 2.7rem;
-}
-  .skills__titles{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: ;
-  }
-
-  .skills_title{
-	font-size: var(--h3-font-size);
-
-  }
-  .skills__text {
-	margin-bottom: var(--mb-4);
-  }
-  
-  .skills__data {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	font-weight: var(--font-semi);
-	padding: .5rem 1rem;
-	margin-bottom: var(--mb-4);
-	border-radius: .5rem;
-	box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  }
-  
-  .skills__icon,
-  .skills__arrow {
-	font-size: 2rem;
-	color: var(--first-color);
-  }
-  
-  .skills__name {
-	font-size: var(--normal-font-size);
-	font-weight: var(--font-medium);
-	color: ;
-  }
-  
-  .skills__bar,
-  skills__percentage {
-	height: 5px;
-	border-radius: .25rem;
-  }
-
-  .skills__bar{
-	background-color: var(--first-color-lighter);
-  }
-
-  .skills__percentage{
-	display: block;
-	background-color: var(--first-color) ;
-  }
-
-  /* skills for job 1 */
-  
-  .skills__html {
-	width: 90%;
-  }
-  
-  .skills__js {
-	width: 85%;
-  }
-  
-  .skills__react {
-	width: 65%;
-  }
-  
-  .skills__python {
-	width: 85%;
-  }
-
-  /* skills for job 2 */
-  
-  .skills__uxui {
-	width: 90%;
-  }
-  
-  .skills__graphicdesign {
-	width: 85%;
-  }
-  
-  .skills__seo {
-	width: 65%;
-  }
-  
-  .skills__socialmedia {
-	width: 80%;
-  }
-
-  /* image to put next to skills */
-  
-  .skills__img {
-	border-radius: 6px;
   }
 
 
