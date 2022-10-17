@@ -433,6 +433,14 @@
 	color: #ccfff3;
   }
 
+  .about__description1{
+	text-align: center;
+	size: 10px;
+	padding-left: 25px;
+	margin-bottom: var(--mb-0-5);
+	color: #ffffff;
+  }
+
   .about__info{
 	display: flex;
 	justify-content: space-evenly;
@@ -866,6 +874,17 @@
 			}
 		  }
 		  
+/* columns for skill page */
+
+.row1 {
+	display: flex;
+  }
+  
+  .column1 {
+	flex: 50%;
+  }
+
+
 		  /* contact from */
 		  .container_contact {
 			border-radius: 5px; 
